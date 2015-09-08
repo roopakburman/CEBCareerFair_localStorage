@@ -1,0 +1,59 @@
+<ion-view title="Additional Educational Details" >
+  <ion-content class="padding">
+    <div class="card">
+          <div class="item item-divider card-bk2 ">Educational Details</div>
+		<div class="list">
+		  <label class="item item-input item-stacked-label">
+			<span class="input-label">Institution Name</span>
+			<input type="text" ng-model="uInstitution" placeholder="NYU" required>
+		  </label>
+		  <label class="item item-input item-stacked-label">
+			<span class="input-label">Major/Area of Study</span>
+			<input type="text" ng-model="uStudy" placeholder="Economics" required>
+		  </label>
+		  <label class="item item-input item-select">
+			<div class="input-label">Education Level</div>
+			<select ng-model="uEducation">
+			  <option>Not Specified</option>
+			  <option selected>None</option>
+			  <option>Associate's Degree/College Diploma</option>
+			  <option>Non-Degree Program</option>
+			  <option>Bachelor's Program</option>
+			  <option>Master's Degree</option>
+			  <option>Doctorate Degree</option>
+			  <option>Higher Degree</option>
+			  <option>Other</option>
+			</select>
+		  </label>
+		  <label class="item item-input item-stacked-label">
+			<span class="input-label">Graduation Start date: </span>
+			<input type="date" ng-model="uGradStart" required>
+		  </label>
+		  <label class="item item-input item-stacked-label">
+			<span class="input-label">Graduation Date: </span>
+			<input type="date" ng-model="uGradDate" required>
+		  </label>
+		  <label class="item item-input item-select">
+			<div class="input-label">Education Status</div>
+			<select ng-model="uEduStatus">
+			  <option>Not Specified</option>
+			  <option selected>Graduated</option>
+			  <option>In Progress</option>
+			  <option>Not Completed</option>
+			  
+			</select>
+		  </label>
+		</div>
+		</div>
+		
+		<div class="card">
+			<ion-item class="item-icon-right" href="#/tab/dash/dash2" type="item-text-wrap"><strong>Fill Additiona Educational Details</strong> <i class="icon ion-chevron-right icon-accessory"></i></ion-item>		
+				<!-- <button class="button button-block button-balanced" ng-click="savePerson(uName, uPhone, uEmail, uDob, uAddress1, uAddress2, uAddress3, uInstitution, uStudy, uEducation, uGradStart, uGradDate, uEduStatus)"> Save </button> -->
+				<button class="button button-outline button-block button-assertive" ng-click="resetMe()">Reset</button>
+		</div>
+		<!-- <button class="button" ng-click="savePerson('Rahul', 'Burman')">Save Rahul</button>
+		<button class="button" ng-click="savePerson('Suman', 'Tyagi')">Save Suman</button> -->
+		<!-- <button class="button" ng-click="getPeople()">Print All</button> -->
+		<!-- <button class="button" ng-click="getPeople({uName: 'Burman'})">Print All Burmans</button> -->
+  </ion-content>
+</ion-view>

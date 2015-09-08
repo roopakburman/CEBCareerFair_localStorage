@@ -1,0 +1,27 @@
+[
+    {
+        "uName": "Roopak Burman",
+        "uPhone": "7033386156",
+        "uAddress1": "1581 North Colonial Terrace",
+        "uEmail": "roopak.burman@gmail.com",
+        "uAddress2": "Arlington",
+        "uAddress3": "22209",
+        "uInstitution": "CCS",
+        "uStudy": "Computers",
+        "uEducation": "Bachelor's Program",
+        "uGradStart": "1997-03-01T05:00:00.000Z",
+        "uGradDate": "2000-04-01T04:00:00.000Z",
+        "uEduStatus": "Graduated",
+        "uSkills": "Test Record\nGraduation",
+        "uInstitution1": "MDU",
+        "uStudy1": "Computers",
+        "uEducation1": "Master's Degree",
+        "uGradStart1": "2000-06-01T04:00:00.000Z",
+        "uGradDate1": "2002-08-02T04:00:00.000Z",
+        "uEduStatus1": "Graduated",
+        "uSkills1": "Test Record\nMasters\nComputers",
+        "_id": "FE91D632-5A79-8EDB-A9B5-8872E1CE9D44",
+        "_rev": "1-e1618bae6ff7ef133b71d71800a506e3",
+        "Date": null
+    }
+]

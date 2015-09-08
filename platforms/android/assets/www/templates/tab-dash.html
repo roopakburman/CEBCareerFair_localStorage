@@ -1,0 +1,141 @@
+<ion-view view-title="<img src='img/CEBCareerFair.png' ></img>">
+  <ion-content class="padding" ng-controller="parseCtrl">
+
+    <div class="card">
+          <div class="item item-divider card-bk2 ">Personal Details</div>
+		<div class="list">
+		  <label class="item item-input item-stacked-label">
+			<span class="input-label">Your Name</span>
+			<input type="text" name="uName" ng-model="uName" placeholder="John" required>
+		  </label>
+		  <label class="item item-input item-stacked-label">
+			<span class="input-label">Your Phone</span>
+			<input type="tel" name="uPhone" ng-model="uPhone" placeholder="+1-999-999-9999" required>
+		  </label>
+		  <label class="item item-input item-stacked-label">
+			<span class="input-label">Your Email</span>
+			<input type="email" name="uEmail" ng-model="uEmail" placeholder="john@suhr.com" required>
+		  </label>
+<!-- 		  <label class="item item-input item-stacked-label">
+			<span class="input-label">Date of Birth</span>
+			<input type="date" ng-model="uDob" required>
+		  </label> -->
+		  <label class="item item-input item-stacked-label">
+			<span class="input-label">Address Line 1</span>
+			<input type="text" ng-model="uAddress1" placeholder="Address Line 1">
+		  </label>
+		  <label class="item item-input item-stacked-label">
+			<span class="input-label">Address Line 2</span>
+			<input type="text" ng-model="uAddress2" placeholder="Address Line 2">
+		  </label>
+		  <label class="item item-input item-stacked-label">
+			<span class="input-label">Address Line 3</span>
+			<input type="text" ng-model="uAddress3" placeholder="Address Line 3">
+		  </label>
+		</div>
+<!-- 		</div>
+		<div class="card"> -->
+          <div class="item item-divider card-bk2 ">Educational Details</div>
+		<div class="list">
+		  <label class="item item-input item-stacked-label">
+			<span class="input-label">Institution Name</span>
+			<input type="text" ng-model="uInstitution" placeholder="NYU" required>
+		  </label>
+		  <label class="item item-input item-stacked-label">
+			<span class="input-label">Major/Area of Study</span>
+			<input type="text" ng-model="uStudy" placeholder="Economics" required>
+		  </label>
+		  <label class="item item-input item-select">
+			<div class="input-label">Education Level</div>
+			<select ng-model="uEducation">
+			  <option>Not Specified</option>
+			  <option selected>None</option>
+			  <option>Associate's Degree/College Diploma</option>
+			  <option>Non-Degree Program</option>
+			  <option>Bachelor's Program</option>
+			  <option>Master's Degree</option>
+			  <option>Doctorate Degree</option>
+			  <option>Higher Degree</option>
+			</select>
+		  </label>
+		  <label class="item item-input item-stacked-label">
+			<span class="input-label">Graduation Start date: </span>
+			<input type="date" ng-model="uGradStart" required>
+		  </label>
+		  <label class="item item-input item-stacked-label">
+			<span class="input-label">Graduation Date: </span>
+			<input type="date" ng-model="uGradDate" required>
+		  </label>
+		  <label class="item item-input item-select">
+			<div class="input-label">Education Status</div>
+			<select ng-model="uEduStatus">
+			  <option>Not Specified</option>
+			  <option selected>Graduated</option>
+			  <option>In Progress</option>
+			  <option>Not Completed</option>
+			  
+			</select>
+			</label>
+			<label class="item item-input">
+				<textarea ng-model="uSkills" placeholder="Type in your Skills"></textarea>
+			</label>
+		</div>
+		</div>
+		<div class="card">
+          <div class="item item-divider card-bk2 ">Additional Educational Details</div>
+			<div class="list">
+			  <label class="item item-input item-stacked-label">
+				<span class="input-label">Institution Name</span>
+				<input type="text" ng-model="uInstitution1" placeholder="NYU" required>
+			  </label>
+			  <label class="item item-input item-stacked-label">
+				<span class="input-label">Major/Area of Study</span>
+				<input type="text" ng-model="uStudy1" placeholder="Economics" required>
+			  </label>
+			  <label class="item item-input item-select">
+				<div class="input-label">Education Level</div>
+				<select ng-model="uEducation1">
+				  <option>Not Specified</option>
+				  <option selected>None</option>
+				  <option>Associate's Degree/College Diploma</option>
+				  <option>Non-Degree Program</option>
+				  <option>Bachelor's Program</option>
+				  <option>Master's Degree</option>
+				  <option>Doctorate Degree</option>
+				  <option>Higher Degree</option>
+				  <option>Other</option>
+				</select>
+			  </label>
+			  <label class="item item-input item-stacked-label">
+				<span class="input-label">Graduation Start date: </span>
+				<input type="date" ng-model="uGradStart1" required>
+			  </label>
+			  <label class="item item-input item-stacked-label">
+				<span class="input-label">Graduation Date: </span>
+				<input type="date" ng-model="uGradDate1" required>
+			  </label>
+			  <label class="item item-input item-select">
+				<div class="input-label">Education Status</div>
+				<select ng-model="uEduStatus1">
+				  <option>Not Specified</option>
+				  <option selected>Graduated</option>
+				  <option>In Progress</option>
+				  <option>Not Completed</option>
+				  
+				</select>
+			  </label>
+			<label class="item item-input">
+				<textarea ng-model="uSkills1" placeholder="Type in your Skills"></textarea>
+			</label>
+			</div>
+		</div>
+		<div class="card">
+			<button class="button button-block button-balanced" ng-click="savePerson(uName, uPhone, uEmail, uAddress1, uAddress2, uAddress3, uInstitution, uStudy, uEducation, uGradStart, uGradDate, uEduStatus, uSkills, uInstitution1, uStudy1, uEducation1, uGradStart1, uGradDate1, uEduStatus1, uSkills1); scrollTop()"> Submit My Information </button>
+			
+			<ion-item class="item-icon-right" href="#/tab/dash/dash1" type="item-text-wrap"><strong>Have Questions on how to fill the form? Click here!</strong> <i class="icon ion-chevron-right icon-accessory"></i></ion-item>		
+			
+			<button class="button button-outline button-block button-assertive clear" ng-click="resetMe1()">Reset</button>
+		</div>
+
+  </ion-content>
+</ion-view>

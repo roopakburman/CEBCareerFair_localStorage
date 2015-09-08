@@ -1,0 +1,141 @@
+<ion-view view-title="<img src='img/CEBCareerFair.png' ></img>">
+  <ion-content class="padding" ng-controller="OverviewController" delegate-handle="mainScroll">
+	<form name="myForm" novalidate>
+    <div class="card">
+          <div class="item item-divider card-bk2 ">Personal Details</div>
+		<!-- <div class="list"> -->
+		  <label class="item item-input">
+			<span class="input-label">Your Name <span class="fError"> *</span></span>
+			<input type="text" name="uName" ng-model="birthday.uName" placeholder="John" required>
+		  </label>
+		  <label class="item item-input">
+			<span class="input-label">Your Phone <span class="fError"> *</span></span>
+			<input type="tel" name="uPhone" ng-model="birthday.uPhone" placeholder="+1-999-999-9999" required>
+		  </label>
+		  <label class="item item-input">
+			<span class="input-label">Your Email<span class="fError"> *</span></span>
+			<input type="email" name="uEmail" ng-model="birthday.uEmail" ng-model-options="{updateOn: 'blur'}" placeholder="john@suhr.com" required>
+		  </label><p class="fError" ng-show="myForm.uEmail.$invalid && !myForm.username.$pristine">&nbsp; Please provide your email address</p>
+<!-- 		  <label class="item item-input">
+			<span class="input-label">Date of Birth</span>
+			<input type="date" ng-model="birthday.uDob" required>
+		  </label> -->
+		  <label class="item item-input">
+			<span class="input-label">Address Line 1</span>
+			<input type="text" ng-model="birthday.uAddress1" placeholder="Address Line 1">
+		  </label>
+		  <label class="item item-input">
+			<span class="input-label">Address Line 2</span>
+			<input type="text" ng-model="birthday.uAddress2" placeholder="Address Line 2">
+		  </label>
+		  <label class="item item-input">
+			<span class="input-label">Address Line 3</span>
+			<input type="text" ng-model="birthday.uAddress3" placeholder="Address Line 3">
+		  </label>
+		<!-- </div> -->
+<!-- 		</div>
+		<div class="card"> -->
+          <div class="item item-divider card-bk2 ">Educational Details</div>
+		<!-- <div class="list"> -->
+		  <label class="item item-input">
+			<span class="input-label">Institution Name<span class="fError"> *</span></span>
+			<input type="text" ng-model="birthday.uInstitution" placeholder="NYU" required>
+		  </label>
+		  <label class="item item-input">
+			<span class="input-label">Major/Area of Study<span class="fError"> *</span></span>
+			<input type="text" ng-model="birthday.uStudy" placeholder="Economics" required>
+		  </label>
+		  <label class="item item-input item-select">
+			<div class="input-label">Education Level<span class="fError"> *</span></div>
+			<select ng-model="birthday.uEducation" required>
+			  <option>Not Specified</option>
+			  <option selected>None</option>
+			  <option>Associate's Degree/College Diploma</option>
+			  <option>Non-Degree Program</option>
+			  <option>Bachelor's Program</option>
+			  <option>Master's Degree</option>
+			  <option>Doctorate Degree</option>
+			  <option>Higher Degree</option>
+			</select>
+		  </label>
+		  <label class="item item-input">
+			<span class="input-label">Graduation Start date: <span class="fError"> *</span></span>
+			<input type="date" ng-model="birthday.uGradStart" required>
+		  </label>
+		  <label class="item item-input">
+			<span class="input-label">Graduation Date: <span class="fError"> *</span></span>
+			<input type="date" ng-model="birthday.uGradDate" required>
+		  </label>
+		  <label class="item item-input item-select">
+			<div class="input-label">Education Status<span class="fError"> *</span></div>
+			<select ng-model="birthday.uEduStatus" required>
+			  <option>Not Specified</option>
+			  <option selected>Graduated</option>
+			  <option>In Progress</option>
+			  <option>Not Completed</option>
+			</select>
+			</label>
+			<label class="item item-input">
+				<textarea ng-model="birthday.uSkills" placeholder="Type in your Skills"></textarea>
+			</label>
+		<!-- </div> -->
+		</div>
+		<div class="card">
+          <div class="item item-divider card-bk2 ">Additional Educational Details</div>
+			<!-- <div class="list"> -->
+			  <label class="item item-input">
+				<span class="input-label">Institution Name</span>
+				<input type="text" ng-model="birthday.uInstitution1" placeholder="NYU">
+			  </label>
+			  <label class="item item-input">
+				<span class="input-label">Major/Area of Study</span>
+				<input type="text" ng-model="birthday.uStudy1" placeholder="Economics">
+			  </label>
+			  <label class="item item-input item-select">
+				<div class="input-label">Education Level</div>
+				<select ng-model="birthday.uEducation1">
+				  <option>Not Specified</option>
+				  <option selected>None</option>
+				  <option>Associate's Degree/College Diploma</option>
+				  <option>Non-Degree Program</option>
+				  <option>Bachelor's Program</option>
+				  <option>Master's Degree</option>
+				  <option>Doctorate Degree</option>
+				  <option>Higher Degree</option>
+				  <option>Other</option>
+				</select>
+			  </label>
+			  <label class="item item-input">
+				<span class="input-label">Graduation Start date: </span>
+				<input type="date" ng-model="birthday.uGradStart1">
+			  </label>
+			  <label class="item item-input">
+				<span class="input-label">Graduation Date: </span>
+				<input type="date" ng-model="birthday.uGradDate1">
+			  </label>
+			  <label class="item item-input item-select">
+				<div class="input-label">Education Status</div>
+				<select ng-model="birthday.uEduStatus1">
+				  <option>Not Specified</option>
+				  <option selected>Graduated</option>
+				  <option>In Progress</option>
+				  <option>Not Completed</option>
+				  
+				</select>
+			  </label>
+			<label class="item item-input">
+				<textarea ng-model="birthday.uSkills1" placeholder="Type in your Skills"></textarea>
+			</label>
+			<!-- </div> -->
+		</div>
+		<div class="card">
+			<!-- <button class="button button-block button-balanced" ng-click="savePerson(uName, uPhone, uEmail, uAddress1, uAddress2, uAddress3, uInstitution, uStudy, uEducation, uGradStart, uGradDate, uEduStatus, uSkills, uInstitution1, uStudy1, uEducation1, uGradStart1, uGradDate1, uEduStatus1, uSkills1); scrollTop(); showAlert()" ng-disabled="myForm.$invalid"> Submit My Information </button> -->
+			
+			<button ng-click="saveBirthday(); scrollMainToTop(); showAlert()" ng-disabled="myForm.$invalid" class="button button-block button-balanced"> Submit My Information </button>
+			<ion-item class="item-icon-right" href="#/tab/dash/dash1" type="item-text-wrap"><strong>Have Questions on how to fill the form? Click here!</strong> <i class="icon ion-chevron-right icon-accessory"></i></ion-item>		
+			
+			<button ng-controller="DashCtrl" class="button button-outline button-block button-assertive clear" ng-click="resetMe1(); scrollMainToTop()">Reset</button>
+		</div>
+	</form>	
+  </ion-content>
+</ion-view>

@@ -1,0 +1,48 @@
+/* Empty. Add your own CSS if you like */
+.card-bk2{
+	color: #ffffff;
+	background:url("../img/3.jpg") center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+
+}
+.scroll-content{
+	background:url("../img/1435902498958.png") no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+}
+.bar .title{
+	top: 8px;
+}
+.fError{
+	color: red;
+	
+}
+textarea{
+	height: 100px;
+}
+.videowrapper {
+    float: none;
+    clear: both;
+    width: 100%;
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 25px;
+    height: 0;
+}
+.videowrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.videowrapper1 iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 50%;
+}
